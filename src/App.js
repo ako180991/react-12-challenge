@@ -5,7 +5,6 @@ import './App.css';
 const Home = () => <p>This is the Home component!</p>;
 const About = () => <p>This challenge is about tabs!</p>;
 const Contact = () => <p>Feel free to contact us!</p>;
-const Error = () => <p>Something went <strong>wrong</strong>!</p>;
 
 class App extends Component {
   constructor(props) {
@@ -30,7 +29,7 @@ class App extends Component {
       case 'contact':
         return <Contact />
       default:
-        return <Error />;
+        return <Home />;
     }
   }
 
